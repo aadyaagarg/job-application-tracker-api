@@ -12,20 +12,14 @@ import java.time.LocalDate;
 @Setter
 public class JobRequest {
 
-    @NotBlank(message="Company name required")
+    @NotBlank(message = "Company name required")
     private String companyName;
-
-    @NotBlank(message="Job role required")
+    @NotBlank(message = "Job role required")
     private String jobRole;
-
     private String location;
-
     private LocalDate applicationDate;
-
     private LocalDate interviewDate;
-
     private String notes;
-
-    @NotNull(message="Status required")
+    @NotNull(message = "Status required")
     private JobStatus status;
 }
